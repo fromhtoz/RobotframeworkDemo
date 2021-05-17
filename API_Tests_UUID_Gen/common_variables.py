@@ -1,0 +1,1 @@
+base_url = "https://uuidtools.com/api/generate"
