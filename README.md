@@ -4,7 +4,7 @@ I can talk for hours about the virtues and elegance of Robot Framework! But if a
 
 Here's the official site: https://robotframework.org/
 
-This project will demonstrate simple tests for both a REST (Representational State Transfer) API (Application Programming Interface) endpoint and a web page UI (User Interface).  
+This project will use simple tests for both a REST (Representational State Transfer) API (Application Programming Interface) endpoint and a web page UI (User Interface) to demonstrate some of the most useful Robot Framework features.  
 
 # Prerequisites
 * A Linux Operating System with the following installed
