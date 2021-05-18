@@ -39,7 +39,7 @@ GET Count Max
     UUID_Base_Validations  ${response}  100
 
 GET Count Zero
-    [Tag]  error_response
+    [Tags]  error_response
     # GET request with count of 0, we expect this to throw an error
     # the expected error string is set as a variable since multiple tests use it,
     # if it ever changes we just need to update the tests one
@@ -47,6 +47,6 @@ GET Count Zero
     Should Be Equal As Strings  ${response.json()['errors']}  ${count_error_string}
 
 GET Count Max+
-    [Tag]  error_response
+    [Tags]  error_response
     ${response} =  GET  ${base_url}/v${uuid_version}/count/101  expected_status=400
     Should Be Equal As Strings  ${response.json()['errors']}  ${count_error_string}
