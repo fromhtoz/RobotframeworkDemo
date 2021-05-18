@@ -1,10 +1,10 @@
 *** Settings ***
-Documentation   Tests the call the GET endpoint of the UUID Tools API
-...             This suite also demostrates the use of Keywords, which can be used to declare common validations used
+Documentation   Tests for the GET endpoint of the UUID Tools API
+...             This suite also demonstrates the use of Keywords, which can be used to declare common validations used
 ...             by multiple tests.  This is a local Keyword, but they can also be declared and imported from another
-...             directory.  We are also importing custom python library files and calling functions from these
-...             libraries from the testcase and keywords.  There are also variables in use from both a variable file
-...             import and a local declaration
+...             directory.  We are also importing custom Python library files and calling functions from these
+...             directly in the testcase and keywords.  There are also variables in use from both a file
+...             import and a local declaration, both of which can be overwritten from the command line.
 Library    requests_wrapper.py
 Library    uuid_validation.py
 Variables    ./common_variables.py
