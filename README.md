@@ -8,14 +8,8 @@ This project will demonstrate simple tests for both a REST (Representational Sta
 
 # Prerequisites
 * A Linux Operating System with the following installed
-    1. git
-    2. docker
-* Optional
-    1. Python3
-    2. Pip
-    3. VirtualEnv
-    4. Robot Framework
-    5. Robot Seleinum Library
+    1. [git](https://git-scm.com/download/linux)
+    2. [docker](https://docs.docker.com/get-docker/)
 # Getting Started
 1. From a Linux terminal
     > git clone https://github.com/fromhtoz/RobotframeworkDemo.git
@@ -24,3 +18,8 @@ This project will demonstrate simple tests for both a REST (Representational Sta
     > cd ./RobotframeworkDemo
     > 
     > run_all_tests.sh
+ # Interactive Mode
+ * The real fun is getting to run robot with different command line arguments.  For that we need the docker container to run interactively:
+    > launch_robot.sh
+ * The test suite README files will assume you are starting from the interactive docker terminal.
+ 
