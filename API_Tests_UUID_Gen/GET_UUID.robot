@@ -12,7 +12,7 @@ UUID_Base_Validations
     Length Should Be  ${response_body.json()}  ${expected_length}
     FOR  ${uuid}  IN  @{response_body.json()}
         ${valid_format} =  check_valid_uuid_format  ${uuid}  ${uuid_version}
-        Should Be True  ${valid_format}
+        Should Be True  ${valid_format}  ${uuid} is not a valid version ${uuid_version} uuid
     END
 
 *** Test Cases ***
