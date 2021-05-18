@@ -8,12 +8,21 @@ Documentation   Tests for the GET endpoint of the UUID Tools API
 Library    requests_wrapper.py
 Library    uuid_validation.py
 Variables    ./common_variables.py
+Suite Setup  Check Version  ${uuid_version}
 
 *** Variables ***
 ${uuid_version} =  1
 ${count_error_string} =  {'count': ['The count must be between 1 and 100.']}
 
 *** Keywords ***
+Check Version
+    [Arguments]  ${version}
+    # These tests are written for version 1 or 4 only
+    @{supported_versions} =  Create List  1  4
+    IF  ${version} not in @{supported_versions}
+        Skip  version ${version} testing is not supported
+    END
+
 UUID_Base_Validations
     [Arguments]  ${response_body}  ${expected_length}
     #  response_body should be the return value from a GET request
