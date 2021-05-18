@@ -19,9 +19,7 @@ Check Version
     [Arguments]  ${version}
     # These tests are written for version 1 or 4 only
     @{supported_versions} =  Create List  1  4
-    IF  ${version} not in @{supported_versions}
-        Skip  version ${version} testing is not supported
-    END
+    Run Keyword If  "${version}" not in @{supported_versions}  Skip  Version ${version} testing is not supported
 
 UUID_Base_Validations
     [Arguments]  ${response_body}  ${expected_length}
