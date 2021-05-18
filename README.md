@@ -21,4 +21,5 @@ This project will demonstrate simple tests for both a REST (Representational Sta
     > git clone https://github.com/fromhtoz/RobotframeworkDemo.git
 2. This will download the repository to your local hard drive
 3. A script is included that will launch a docker container and execute all the tests in the repository
+    > cd ./RobotframeworkDemo
     > run_all_tests.sh
