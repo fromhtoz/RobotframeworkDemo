@@ -1,5 +1,5 @@
 *** Settings ***
-Library    RequestsLibrary
+Library    requests_wrapper.py
 Library    uuid_validation.py
 Variables    ./common_variables.py
 
@@ -26,8 +26,8 @@ GET Count Max
 
 GET Count Zero
     ${response} =  GET  ${base_url}/v${uuid_version}/count/0  expected_status=400
-    Should Be Equal As Strings  ${response.json()['errors']}  {u'count': [u'The count must be between 1 and 100.']}
+    Should Be Equal As Strings  ${response.json()['errors']}  {'count': ['The count must be between 1 and 100.']}
 
 GET Count Max+1
     ${response} =  GET  ${base_url}/v${uuid_version}/count/101  expected_status=400
-    Should Be Equal As Strings  ${response.json()['errors']}  {u'count': [u'The count must be between 1 and 100.']}
+    Should Be Equal As Strings  ${response.json()['errors']}  {'count': ['The count must be between 1 and 100.']}
