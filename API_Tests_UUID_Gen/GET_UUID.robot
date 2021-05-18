@@ -5,6 +5,8 @@ Documentation   Tests for the GET endpoint of the UUID Tools API
 ...             directory.  We are also importing custom Python library files and calling functions from these
 ...             directly in the testcase and keywords.  There are also variables in use from both a file
 ...             import and a local declaration, both of which can be overwritten from the command line.
+...             Suite Setup can call one keyword, in this case we are checking that the variable is set to a version our test cases support.
+...             If not, then the test cases are skipped. 
 Library    requests_wrapper.py
 Library    uuid_validation.py
 Variables    ./common_variables.py
