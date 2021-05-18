@@ -19,7 +19,7 @@ This test suite uses [UUID Tool's](https://www.uuidtools.com/docs) API endpoint 
 2. Running a test suite (run all the .robot test files in the given directory tree)
     > robot ./API_Tests_UUID_Gen
 3. Running a test by tag (tags can be combine with suite names as well) -i includes test with the tag, -e excludes tests with the tag
-    > robot -i regression 
+    > robot -i regression ./
     > 
     > robot -i regression ./API_Tests_UUID_Gen
     > 
