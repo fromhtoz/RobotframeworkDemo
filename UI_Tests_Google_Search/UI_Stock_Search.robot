@@ -26,7 +26,8 @@ Search For Stock
 
 *** Test Cases ***          search_string               stock_name
 Apple Search Lowercase      appl                        Apple Inc
-    [Tags]  ui_regression
+    [Tags]  ui_regression  Apple
 Apple Search Uppercase      APPL                        Apple Inc
 Apple Search Fullname       Apple Inc Stock             Apple Inc
 Google Search Fullname      alphabet inc stock price    Alphabet Inc Class A
+    [Tags]  Google
