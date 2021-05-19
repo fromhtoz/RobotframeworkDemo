@@ -24,7 +24,7 @@ This project will use simple tests for both a REST (Representational State Trans
  # Interactive Mode
  * The real fun is running robot with different command line arguments.  For that we need the docker container to run interactively:
     > launch_robot.sh
- * The test suite README files will assume you are starting from the interactive docker terminal.
+ * The suite README files will guide you through further use of robot commands.
 # Test Suites
 There are two test suites with a few sample tests designed to showcase my favorite features.
 1. API_Tests_UUID_Gen
