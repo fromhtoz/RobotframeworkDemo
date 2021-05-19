@@ -1,10 +1,9 @@
 *** Settings ***
 Documentation   Tests for the GET endpoint of the UUID Tools API
-...             This suite also demonstrates the use of Keywords, which can be used to declare common validations used
-...             by multiple tests.  This is a local Keyword, but they can also be declared and imported from another
-...             directory.  We are also importing custom Python library files and calling functions from these
-...             directly in the testcase and keywords.  There are also variables in use from both a file
-...             import and a local declaration, both of which can be overwritten from the command line.
+...             This suite also demonstrates the use of Keywords, which can be used to declare common validations used by multiple tests.  
+...             This is a local Keyword, but they can also be declared and imported from another directory.  We are also importing custom 
+...             Python library files and calling functions from these directly in the testcase and keywords.  There are also variables in 
+...             use from both a file import and a local declaration, both of which can be overwritten from the command line.
 ...             Suite Setup can call one keyword, in this case we are checking that the variable is set to a version our test cases support.
 ...             If not, then the test cases are skipped. 
 Library    requests_wrapper.py
