@@ -12,7 +12,7 @@ This test suite uses [UUID Tool's](https://www.uuidtools.com/docs) API endpoint 
     * This is a file where common variable declarations go so that each test doesn't have to declare them, or a user doesn't have to enter a variable value from the command line every time.  These can be overwritten from the command line however, which is very useful for setting up CI/CD jobs to execute a single test against multiple environments.
 3. requests_wrapper.py
 4. uuid_validation.py
-    * These are python library files used to highlight how code can be called directly from the test cases, and behind the scenens validation can be done so that the test is still very readable.
+    * These are python library files used to highlight how code can be called directly from the test cases, and behind the scenes validation can be done so that the test is still very readable.
 ## Runtime Examples
 1. Running a single test
     > robot -t GET_Default ./API_Tests_UUID_Gen
