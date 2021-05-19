@@ -1,6 +1,6 @@
 UI_Tests_Google_Search
 ==================
-This test suite uses a [Google](google.com) web search to demostrate use of the SeleinumLibrary for manipulating and validating webpages
+This test suite uses a [Google](google.com) web search to demostrate use of the Selenium Library for manipulating and validating webpages
 
 ## Interactive Mode
  * First launch the Robot Framework docker container:
